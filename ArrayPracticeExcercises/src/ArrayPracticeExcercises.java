@@ -5,7 +5,7 @@ public class ArrayPracticeExcercises {
 		
 	//write a for loop that prints 10 numbers and another that prints them in reverse
 		
-		int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//		int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 //		
 //		for (int i=0; i<nums.length; i++) {
 //			System.out.println(nums[i]);
@@ -57,9 +57,13 @@ public class ArrayPracticeExcercises {
 		 * After the loop, return the difference.
 		 */
 			
+		
+		int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		
 		System.out.println(sumWithoutSmallest(nums));
 		
 	}
+	
 	public static int sumWithoutSmallest(int[] values) {
 		int sumValues = 0;
 		int minValue = values[0];
