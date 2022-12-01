@@ -8,7 +8,8 @@ public class Day2 {
         String direction = "down";
         int distance = 0;
         int horizontal = 0;
-        int vertical = 0;
+        int depth = 0;
+        int aim = 0;
         while ((line = reader.readLine()) != null){
             String[] splitInstructions = line.split("\\s");
             for(int i=0; i<splitInstructions.length; i++){
@@ -22,16 +23,17 @@ public class Day2 {
                 }
                 switch(direction){
                     case "forward": horizontal += distance;
+                                    depth += (aim * distance);
                     break;
-                    case "down": vertical += distance;
+                    case "down": aim += distance;
                     break;
-                    case "up": vertical -= distance;
+                    case "up": aim -= distance;
                     break;
                 }
                 distance = 0;
             }
         }
-        System.out.println(horizontal * vertical);
+        System.out.println(horizontal * depth);
         reader.close();
     } 
 }
