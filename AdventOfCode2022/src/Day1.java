@@ -25,9 +25,7 @@ public class Day1 {
 					calories += Integer.parseInt(cal);	
 		}
 		Collections.sort(calorieCounter, Collections.reverseOrder());
-		for(int i: calorieCounter) {
-			System.out.println(i);
-		}
+
 		int totalCalInventory = calorieCounter.get(0) + calorieCounter.get(1) + calorieCounter.get(2);
 		System.out.println(totalCalInventory);
 		reader.close();
