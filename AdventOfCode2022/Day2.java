@@ -17,17 +17,17 @@ public class Day2 {
                 }
                 if (playerOne.equals("A")) {
                     if (playerTwo.equals("X")){
-                        score += 4;
+                        score += 3;
                     }
                 }
                 if (playerOne.equals("A")) {
                     if (playerTwo.equals("Y")){
-                        score += 8;
+                        score += 4;
                     }
                 }
                 if (playerOne.equals("A")) {
                     if (playerTwo.equals("Z")){
-                        score += 3;
+                        score += 8;
                     }
                 }
                 if (playerOne.equals("B")) {
@@ -47,17 +47,17 @@ public class Day2 {
                 }
                 if (playerOne.equals("C")) {
                     if (playerTwo.equals("X")){
-                        score += 7;
-                    }
-                }
-                if (playerOne.equals("C")) {
-                    if (playerTwo.equals("Y")){
                         score += 2;
                     }
                 }
                 if (playerOne.equals("C")) {
-                    if (playerTwo.equals("Z")){
+                    if (playerTwo.equals("Y")){
                         score += 6;
+                    }
+                }
+                if (playerOne.equals("C")) {
+                    if (playerTwo.equals("Z")){
+                        score += 7;
                     }
                 }
             }
